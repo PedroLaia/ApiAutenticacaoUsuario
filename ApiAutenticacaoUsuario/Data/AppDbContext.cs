@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using ApiAutenticacaoUsuario.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace ApiAutenticacaoUsuario.Data
 {
@@ -9,5 +10,8 @@ namespace ApiAutenticacaoUsuario.Data
             
         }
 
-    }
+        public DbSet<UsuarioModel> Usuarios { get; set; }
+
+
+     }
 }
