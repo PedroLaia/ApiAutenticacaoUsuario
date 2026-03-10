@@ -1,7 +1,11 @@
-﻿namespace ApiAutenticacaoUsuario.Services.Usuario
+﻿using ApiAutenticacaoUsuario.Dto.Usuario;
+using ApiAutenticacaoUsuario.Models;
+
+namespace ApiAutenticacaoUsuario.Services.Usuario
 {
     public interface IUsuarioInterface
     {
-        string retornaString(int id);
+        Task<ResponseModel<UsuarioModel>> RegistrarUsuario(UsuarioCriacaoDto usuarioCriacaoDto); 
+
     }
 }
